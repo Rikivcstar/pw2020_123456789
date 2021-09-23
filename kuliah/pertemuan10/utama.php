@@ -12,6 +12,7 @@ $sos = query("SELECT * FROM seafood");
 </head>
 <body>
     <h2>Daftar Seafood</h2>
+    <a href="tambah.php">Tambah Data Seafood</a>
     <table border ="1" cellpadding = "5" cellspacing = "0">
         <tr>
             <th>#</th>

@@ -20,4 +20,21 @@ function query($query){
 
 }
 
+function tambah($data){
+
+    global $conn;
+    $nama = htmlspecialchars($data["nama_seafood"]);
+    $merk = htmlspecialchars($data["merk_seafood"]);
+    $jumlah = htmlspecialchars( $data["jumlah"]);
+    $harga = htmlspecialchars($data["harga"]);
+    $gambar = htmlspecialchars($data["gambar"]);
+
+    $query = "INSERT INTO seafood 
+                VALUES
+            (null,'$nama','$merk','$jumlah','$harga','$gambar')";
+    mysqli_query($conn,$query);
+
+    return mysqli_affected_rows($conn);
+}
+
 ?>
