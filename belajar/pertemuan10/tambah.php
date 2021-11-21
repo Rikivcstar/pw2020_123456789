@@ -8,12 +8,12 @@ if(isset($_POST["tambah"])){
 
     echo "<script>
             alert('Data Berhasil Di Tambahkan')
-            document.location.href= 'utama.php';
+            document.location.href= 'index.php';
         </script>";
 }else {
      echo "<script>
             alert('Data Berhasil Di Tambahkan')
-            document.location.href= 'utama.php';
+            document.location.href= 'index.php';
         </script>";
 }
 }
